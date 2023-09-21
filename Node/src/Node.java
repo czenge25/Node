@@ -5,7 +5,6 @@ CZ
 
 public class Node<T> {
 
-    private int index;
     private T data;
     private Node parent;
     private Node child;
@@ -24,14 +23,6 @@ public class Node<T> {
         this.child = child;
     }
 
-    public int getIndex() {
-        return index;
-    }
-
-    public void setIndex(int index) {
-        this.index = index;
-    }
-
     public T getData() {
         return data;
     }
@@ -45,7 +36,7 @@ public class Node<T> {
     }
 
     public boolean equals(Node n1, Node n2) {
-        return n1.equals(n2);
+        return n1.getData().equals(n2.getData());
     }
 
 }
