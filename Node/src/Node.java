@@ -31,12 +31,12 @@ public class Node<T> {
         this.data = data;
     }
 
-    public String toString(Node n) {
-        return "Node: " + n.getData().toString();
+    public String toString() {
+        return "Node: " + this.data.toString();
     }
 
-    public boolean equals(Node n1, Node n2) {
-        return n1.getData().equals(n2.getData());
+    public boolean equals(Node n) {
+        return this.data.equals(n.getData());
     }
 
 }
